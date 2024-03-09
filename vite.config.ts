@@ -8,6 +8,9 @@ import ElectronPlugin from './plugins/vite-plugin-electron';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
+  build: {
+    outDir: 'docs'
+  },
   plugins: [
     vue(),
     // electron([
