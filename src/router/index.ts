@@ -1,25 +1,24 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import testpage from './testpage';
+import pageList from './pageList';
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'index',
-      redirect: 'father'
+      redirect: 'homepage'
     },
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/Login.vue')
+      path: '/404',
+      name: '404',
+      component: () => import('../views/404.vue')
     },
     {
-      path: '/father',
-      name: 'father',
+      path: '/homepage',
+      name: 'homepage',
       component: () => import('../views/Index.vue'),
       redirect: 'home',
-      children: [...testpage]
+      children: [...pageList]
     }
   ]
 });

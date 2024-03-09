@@ -1,0 +1,1 @@
+import{d as e,o,a as n,b as t,c as a,u as s,e as u}from"./index-336ab162.js";const p=e({__name:"404",setup(r){return s(),u(),o(()=>{}),n(()=>{}),(c,_)=>(t(),a("div",null,"404"))}});export{p as default};

@@ -1,1 +1,0 @@
-import{d as t,o as c,a as r,b as s,c as a,e as d}from"./index-196c7813.js";const p=t({__name:"test1",setup(i){const{ipcRenderer:e}=require("electron"),n=function(){try{e.send("open-sub-window","testelectronchild")}catch{}};return c(()=>{}),r(()=>{}),(o,u)=>(s(),a("div",null,[d("button",{onClick:n},"创建子窗口11211")]))}});export{p as default};
