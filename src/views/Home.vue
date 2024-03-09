@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>for the best mh</div>
 </template>
 <script setup lang="ts">
 import {

@@ -4,13 +4,13 @@ import testpage from '@/router/pageList';
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <div class="wrapper">
       <nav>
         <RouterLink v-for="(item, i) in testpage" :to="item.path">{{ item.name }}</RouterLink>
       </nav>
     </div>
-  </header>
+  </header> -->
 
   <RouterView />
 </template>
