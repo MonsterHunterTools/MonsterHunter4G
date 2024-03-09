@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [
     vue(),
     ElectronPlugin({
-      output: 'dist',
+      output: 'docs',
       entry: [
         {
           entry: 'src/electron/main.ts',

@@ -1,8 +1,8 @@
 {
-  "name": "endless-summer-project-vue3",
+  "name": "endless-summer-monster-hunter-4g",
   "version": "0.0.2",
   "author": "EndlessSummer",
-  "main": "dist/main.js",
+  "main": "docs/main.js",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -21,18 +21,20 @@
     "appId": "com.EndlessSummerApp.app",
     "productName": "EndlessSummerApp",
     "files": [
-      "dist/**/*"
+      "docs/**/*"
     ],
     "directories": {
       "output": "dist_electron/V${version}"
     },
     "mac": {
       "artifactName": "${productName}_${version}.${ext}",
+      "icon": "./public/logo256.ico",
       "target": [
         "dmg"
       ]
     },
     "win": {
+      "icon": "./public/logo256.ico",
       "target": [
         {
           "target": "nsis",

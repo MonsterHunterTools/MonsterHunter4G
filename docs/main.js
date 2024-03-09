@@ -31,6 +31,7 @@ var createWindow = () => {
     // frame: false, //创建无边窗口
     width: 1200,
     height: 700,
+    icon: import_path.default.join(__dirname, "../../public/logo64.ico"),
     webPreferences: {
       contextIsolation: false,
       // 是否开启隔离上下文
