@@ -8,7 +8,7 @@ const createWindow = () => {
     // frame: false, //创建无边窗口
     width: 1200,
     height: 700,
-    icon: path.join(__dirname, '../../public/logo64.ico'),
+    icon: path.join(__dirname, './public/icon256.ico'),
     webPreferences: {
       contextIsolation: false, // 是否开启隔离上下文
       nodeIntegration: true, // 渲染进程使用Node API
