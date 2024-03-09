@@ -11,11 +11,13 @@ const router = createRouter({
     {
       path: '/404',
       name: '404',
+      // @ts-ignore
       component: () => import('../views/404.vue')
     },
     {
       path: '/homepage',
       name: 'homepage',
+      // @ts-ignore
       component: () => import('../views/Index.vue'),
       redirect: 'home',
       children: [...pageList]
