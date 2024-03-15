@@ -1,0 +1,16 @@
+{
+  "login": {
+    "username": "Username",
+    "password": "Password"
+  },
+  "title": "MonsterHunter4G",
+  "guild": {
+    "questsEditer": {
+      "selectMainMonster": "Select Main Monster",
+      "selectSecondaryMonster": "Select secondary monsters",
+      "step": {
+        "title1": "设定Monster Wepon FJ"
+      }
+    }
+  }
+}

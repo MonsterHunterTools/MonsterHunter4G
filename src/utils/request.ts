@@ -1,7 +1,7 @@
 import axios from 'axios';
 export default (config: any) => {
   const service: any = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_REQUESTURL as string,
+    baseURL: config.isLocal ? '' : (import.meta.env.VITE_API_BASE_REQUESTURL as string),
     timeout: 50000
   });
   // 请求拦截器

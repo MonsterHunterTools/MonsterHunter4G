@@ -1,0 +1,16 @@
+{
+  "login": {
+    "username": "ล็อกอิน",
+    "password": "รหัสผ่าน"
+  },
+  "title": "นักล่าปีศาจ",
+  "guild": {
+    "questsEditer": {
+      "selectMainMonster": "เลือกมอนสเตอร์หลัก",
+      "selectSecondaryMonster": "เลือกมอนสเตอร์รอง",
+      "step": {
+        "title1": "设定Monster Wepon FJ"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "login": {
+    "username": "賬號",
+    "password": "密碼"
+  },
+  "title": "魔物獵人4G",
+  "guild": {
+    "questsEditer": {
+      "selectMainMonster": "選擇主要魔物",
+      "selectSecondaryMonster": "選擇次要魔物",
+      "step": {
+        "title1": "设定Monster Wepon FJ"
+      }
+    }
+  }
+}

@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import ToolBars from '@/components/layout/ToolBars.vue';
 import { RouterLink, RouterView } from 'vue-router';
 import testpage from '@/router/pageList';
 </script>
 
 <template>
+  <ToolBars />
   <!-- <header>
     <div class="wrapper">
       <nav>

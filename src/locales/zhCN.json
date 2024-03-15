@@ -1,0 +1,16 @@
+{
+  "login": {
+    "username": "账号",
+    "password": "密码"
+  },
+  "title": "怪物猎人4G",
+  "guild": {
+    "questsEditer": {
+      "selectMainMonster": "选择主要怪物",
+      "selectSecondaryMonster": "选择次要怪物",
+      "step": {
+        "title1": "设定Monster Wepon FJ"
+      }
+    }
+  }
+}
