@@ -1,7 +1,7 @@
 [
   {
     "id": "07",
-    "icon": "/public/monster/MH4-Yian_Kut-Ku_Icon.webp",
+    "icon": "/public/monster/MH4U-Yian_Kut-Ku_Icon.webp",
     "unit": "2",
     "level": "90",
     "artifact": "T2",
@@ -14,7 +14,7 @@
   },
   {
     "id": "08",
-    "icon": "/public/monster/MH4-Blue_Yian_Kut-Ku_Icon.webp",
+    "icon": "/public/monster/MH4U-Blue_Yian_Kut-Ku_Icon.webp",
     "unit": "2",
     "level": "90",
     "artifact": "T9",
@@ -261,7 +261,7 @@
   },
   {
     "id": "63",
-    "icon": "",
+    "icon": "/public/monster/MH4U-Diablos_Icon.webp",
     "unit": "2",
     "level": "101",
     "artifact": "T3",
@@ -274,7 +274,7 @@
   },
   {
     "id": "64",
-    "icon": "",
+    "icon": "/public/monster/MH4U-Black_Diablos_Icon.webp",
     "unit": "2",
     "level": "101",
     "artifact": "T7",

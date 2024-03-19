@@ -1,0 +1,7 @@
+{
+  "i18n-ally.enabledParsers": ["js", "ts", "json"], // 顺序错了好像会导致报错
+  "i18n-ally.localesPaths": "src/locales",
+  "i18n-ally.keystyle": "nested", // 翻译路径格式
+  "i18n-ally.sourceLanguage": "en", // 翻译源语言
+  "i18n-ally.displayLanguage": "en" //显示语言， 这里也可以设置显示英文为en,
+}

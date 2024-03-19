@@ -13,6 +13,9 @@
               @update:modelValue="onSelectMainMonster"
               return-object
             >
+              <template v-slot:selection="{ item, index }">
+                <v-img height="40" width="40" aspect-ratio="1/1" :src="item.raw.icon"></v-img>
+              </template>
               <template v-slot:item="{ props, item }">
                 <v-list-item
                   v-bind="props"
@@ -21,8 +24,8 @@
                   rounded="xl"
                 >
                   <template v-slot:prepend>
-                    <v-avatar color="#5A4D31">
-                      <v-img cover :src="item.raw.icon"></v-img>
+                    <v-avatar rounded="0" color="#5A4D31">
+                      <v-img cover aspect-ratio="1/1" :src="item.raw.icon"></v-img>
                     </v-avatar>
                   </template>
                 </v-list-item>
@@ -38,6 +41,9 @@
               @update:modelValue="onSelectSecondaryMonster"
               return-object
             >
+              <template v-slot:selection="{ item, index }">
+                <v-img height="40" width="40" aspect-ratio="1/1" :src="item.raw.icon"></v-img>
+              </template>
               <template v-slot:item="{ props, item }">
                 <v-list-item
                   v-bind="props"
@@ -46,8 +52,8 @@
                   rounded="xl"
                 >
                   <template v-slot:prepend>
-                    <v-avatar color="grey-lighten-1">
-                      <v-img :width="30" aspect-ratio="16/9" cover :src="item.raw.icon"></v-img>
+                    <v-avatar rounded="0" color="#5A4D31">
+                      <v-img cover aspect-ratio="1/1" :src="item.raw.icon"></v-img>
                     </v-avatar>
                   </template>
                 </v-list-item>
@@ -67,13 +73,22 @@
               return-object
             >
               <template v-slot:item="{ props, item }">
-                <v-list-item v-bind="props" :title="item.raw.name" rounded="xl">
+                <v-list-item v-bind="props" rounded="xl">
                   <!-- :subtitle="item.raw.type" -->
                   <!-- <template v-slot:prepend>
                     <v-avatar color="grey-lighten-1">
                       <v-img :width="30" aspect-ratio="16/9" cover :src="item.raw.icon"></v-img>
                     </v-avatar>
                   </template> -->
+                  <template v-slot:default>
+                    <div class="d-flex">
+                      <v-img
+                        height="260"
+                        v-for="iconsdata in item.raw.icons.split(',')"
+                        :src="iconsdata || 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'"
+                      ></v-img>
+                    </div>
+                  </template>
                 </v-list-item>
               </template>
             </v-select>

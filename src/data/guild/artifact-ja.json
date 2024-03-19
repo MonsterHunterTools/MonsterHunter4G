@@ -69,7 +69,7 @@
       {
         "id": "01",
         "name": "大剣/太刀 (41式対飛竜大剣、凍刀)",
-        "icons": ""
+        "icons": "/public/MH4G Official Guide Book/01.png,/public/MH4G Official Guide Book/09.png"
       },
       {
         "id": "02",
@@ -467,7 +467,7 @@
       {
         "id": "01",
         "name": "大剣/太刀 (41式飛竜大剣、凍刃)",
-        "icons": ""
+        "icons": "/public/MH4G Official Guide Book/01.png,/public/MH4G Official Guide Book/09.png"
       },
       {
         "id": "02",
