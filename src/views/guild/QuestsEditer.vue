@@ -74,12 +74,6 @@
             >
               <template v-slot:item="{ props, item }">
                 <v-list-item v-bind="props" rounded="xl">
-                  <!-- :subtitle="item.raw.type" -->
-                  <!-- <template v-slot:prepend>
-                    <v-avatar color="grey-lighten-1">
-                      <v-img :width="30" aspect-ratio="16/9" cover :src="item.raw.icon"></v-img>
-                    </v-avatar>
-                  </template> -->
                   <template v-slot:default>
                     <div class="d-flex">
                       <v-img
@@ -92,6 +86,69 @@
                 </v-list-item>
               </template>
             </v-select>
+          </v-card-item>
+          <!-- 选择防具外观 -->
+          <v-card-item>
+            <v-select
+              :disabled="armorList.length == 0"
+              clearable
+              :label="$t('guild.questsEditer.selectSecondaryMonster')"
+              :items="armorList"
+              item-title="name"
+              v-model="guildQuestsForm.armor"
+              return-object
+            >
+              <template v-slot:item="{ props, item }">
+                <v-list-item v-bind="props" rounded="xl">
+                  <!-- <template v-slot:default>
+                    <div class="d-flex">
+                      <v-img
+                        height="260"
+                        v-for="iconsdata in item.raw.icons.split(',')"
+                        :src="iconsdata || 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'"
+                      ></v-img>
+                    </div>
+                  </template> -->
+                </v-list-item>
+              </template>
+            </v-select>
+          </v-card-item>
+          <!-- 选择防具类型 -->
+
+          <v-card-item>
+            <v-select
+              clearable
+              :label="$t('guild.questsEditer.selectSecondaryMonster')"
+              :items="armorTypeList"
+              item-title="name"
+              v-model="guildQuestsForm.armorType"
+              return-object
+            >
+              <template v-slot:item="{ props, item }">
+                <v-list-item v-bind="props" rounded="xl">
+                  <!-- <template v-slot:default>
+                    <div class="d-flex">
+                      <v-img
+                        height="260"
+                        v-for="iconsdata in item.raw.icons.split(',')"
+                        :src="iconsdata || 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'"
+                      ></v-img>
+                    </div>
+                  </template> -->
+                </v-list-item>
+              </template>
+            </v-select>
+          </v-card-item>
+          <v-divider class="mx-4 mb-1"></v-divider>
+          <!-- lv -->
+          <v-card-item>
+            <v-text-field
+              v-model="guildQuestsForm.level"
+              color="primary"
+              label="level"
+              type="number"
+              @update:modelValue="onchangeLevel"
+            ></v-text-field>
           </v-card-item>
         </v-card>
       </template>
@@ -128,25 +185,73 @@ const axios: any = inject('$axios');
 const route = useRoute(); // route.query.exampleId
 const router = useRouter();
 const guildQuestsForm = ref({
-  MainMonster: null,
-  SecondaryMonster: null,
-  weapon: null
+  MainMonster: null, //主怪
+  SecondaryMonster: null, //副怪
+  weapon: null, //武器
+  armor: null, //防具
+  armorType: null, //防具类型
+  level: 0 //任务等级
 });
-const toExamplePage = () => {
-  router.push({
-    path: '/example',
-    query: {
-      exampleId: 'exampleId'
-    }
-  });
-};
 const SelectedMainMonster = ref(null);
 const mainMonsterList = ref([]);
 const artifactList = ref([]);
 const weaponList = ref([]);
 const armorList = ref([]);
+const armorTypeList = ref([
+  {
+    id: '00',
+    name: '胴',
+    icons: ''
+  },
+  {
+    id: '01',
+    name: '腕',
+    icons: ''
+  },
+  {
+    id: '02',
+    name: '腰',
+    icons: ''
+  },
+  {
+    id: '03',
+    name: '脚',
+    icons: ''
+  },
+  {
+    id: '04',
+    name: '頭',
+    icons: ''
+  }
+]);
 const secondaryMonsterList = ref([]);
 const canSelectSecondaryMonster = ref(false);
+// 监听等级变化
+const onchangeLevel = (data: string) => {
+  if (data) {
+    if (Number(data) > 140) {
+      guildQuestsForm.value.level = 140;
+      return;
+    }
+  }
+  console.log(data);
+};
+// 计算任务等级
+const getQuestsLevel = () => {
+  if (guildQuestsForm.value.MainMonster && guildQuestsForm.value.SecondaryMonster) {
+    guildQuestsForm.value.level = Math.floor(
+      (Number(guildQuestsForm.value.MainMonster.level) +
+        Number(guildQuestsForm.value.SecondaryMonster.level)) /
+        2
+    );
+  } else {
+    guildQuestsForm.value.level = guildQuestsForm.value.MainMonster
+      ? Number(guildQuestsForm.value.MainMonster.level)
+      : guildQuestsForm.value.SecondaryMonster
+        ? Number(guildQuestsForm.value.SecondaryMonster.level)
+        : 0;
+  }
+};
 const getGuildMonster = () => {
   axios
     .getGuildMonster(localStorage.getItem('lang') || 'ja')
@@ -184,9 +289,9 @@ const getGuildArtifact = () => {
 const getMonsterOfArtifact = (id) => {
   artifactList.value.forEach((item) => {
     if (item.id == id) {
-      console.log('111', guildQuestsForm.value.weapon);
       weaponList.value = item.weapon;
       armorList.value = item.armor;
+      console.log('111', armorList.value);
     }
   });
   if (guildQuestsForm.value.weapon && guildQuestsForm.value.weapon.id) {
@@ -216,9 +321,12 @@ const onSelectMainMonster = (data) => {
     armorList.value = [];
     guildQuestsForm.value.weapon = null;
   }
+  // 计算level
+  getQuestsLevel();
 };
 const onSelectSecondaryMonster = (data) => {
   console.log(data);
+  getQuestsLevel();
 };
 onMounted(() => {});
 onUnmounted(() => {});
