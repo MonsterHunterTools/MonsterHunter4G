@@ -12,7 +12,7 @@
 </template>
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-const endingTimeInit = '2024-04-04-08:00:00';
+const endingTimeInit = '2024-04-09-08:00:00';
 const endingTime = new Date('2024-04-09T08:00:00').getTime();
 let TimesInit = ref('');
 function updateElapsedTime() {
