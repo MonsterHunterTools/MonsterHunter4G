@@ -27,7 +27,7 @@
   },
   {
     "id": "0B",
-    "icon": "/public/monster/MH4-Tigrex_Icon.webp",
+    "icon": "/public/monster/MH4U-Tigrex_Icon.webp",
     "unit": "2",
     "level": "98",
     "artifact": "T6",
@@ -40,7 +40,7 @@
   },
   {
     "id": "0C",
-    "icon": "/public/monster/MH4-Brute_Tigrex_Icon.webp",
+    "icon": "/public/monster/MH4U-Brute_Tigrex_Icon.webp",
     "unit": "2",
     "level": "94",
     "artifact": "T10",
@@ -53,7 +53,7 @@
   },
   {
     "id": "10",
-    "icon": "/public/monster/MH4-Velocidrome_Icon.webp",
+    "icon": "/public/monster/MH4U-Velocidrome_Icon.webp",
     "unit": "2",
     "level": "90",
     "artifact": "T2",
@@ -66,7 +66,7 @@
   },
   {
     "id": "13",
-    "icon": "/public/monster/MH4-Rajang_Icon.webp",
+    "icon": "/public/monster/MH4U-Rajang_Icon.webp",
     "unit": "2",
     "level": "120",
     "artifact": "T11",
@@ -79,7 +79,7 @@
   },
   {
     "id": "1C",
-    "icon": "/public/monster/MH4-Gore_Magala_Icon.webp",
+    "icon": "/public/monster/MH4U-Gore_Magala_Icon.webp",
     "unit": "1",
     "level": "98",
     "artifact": "T3",
@@ -92,7 +92,7 @@
   },
   {
     "id": "1D",
-    "icon": "/public/monster/MH4-Shagaru_Magala_Icon.webp",
+    "icon": "/public/monster/MH4U-Shagaru_Magala_Icon.webp",
     "unit": "1",
     "level": "120",
     "artifact": "T8",
@@ -105,7 +105,7 @@
   },
   {
     "id": "1E",
-    "icon": "/public/monster/MH4-Yian_Garuga_Icon.webp",
+    "icon": "/public/monster/MH4U-Yian_Garuga_Icon.webp",
     "unit": "2",
     "level": "101",
     "artifact": "T11",
@@ -118,7 +118,7 @@
   },
   {
     "id": "1F",
-    "icon": "/public/monster/MH4-Kushala_Daora_Icon.webp",
+    "icon": "/public/monster/MH4U-Kushala_Daora_Icon.webp",
     "unit": "1",
     "level": "120",
     "artifact": "T1",
@@ -131,7 +131,7 @@
   },
   {
     "id": "20",
-    "icon": "/public/monster/MH4-Teostra_Icon.webp",
+    "icon": "/public/monster/MH4U-Teostra_Icon.webp",
     "unit": "1",
     "level": "120",
     "artifact": "T8",
@@ -144,7 +144,7 @@
   },
   {
     "id": "22",
-    "icon": "/public/monster/MH4-Kirin_Icon.webp",
+    "icon": "/public/monster/MH4U-Kirin_Icon.webp",
     "unit": "2",
     "level": "120",
     "artifact": "T5",
@@ -157,7 +157,7 @@
   },
   {
     "id": "23",
-    "icon": "/public/monster/MH4-Oroshi_Kirin_Icon.webp",
+    "icon": "/public/monster/MH4U-Oroshi_Kirin_Icon.webp",
     "unit": "2",
     "level": "120",
     "artifact": "T1",
@@ -170,7 +170,7 @@
   },
   {
     "id": "26",
-    "icon": "/public/monster/MH4-Basarios_Icon.webp",
+    "icon": "/public/monster/MH4U-Basarios_Icon.webp",
     "unit": "2",
     "level": "98",
     "artifact": "T9",
@@ -183,7 +183,7 @@
   },
   {
     "id": "27",
-    "icon": "/public/monster/MH4-Ruby_Basarios_Icon.webp",
+    "icon": "/public/monster/MH4U-Ruby_Basarios_Icon.webp",
     "unit": "2",
     "level": "98",
     "artifact": "T4",
@@ -196,7 +196,7 @@
   },
   {
     "id": "2C",
-    "icon": "/public/monster/MH4-Brachydios_Icon.webp",
+    "icon": "/public/monster/MH4U-Brachydios_Icon.webp",
     "unit": "2",
     "level": "101",
     "artifact": "T10",
@@ -209,7 +209,7 @@
   },
   {
     "id": "30",
-    "icon": "/public/monster/MH4-Zinogre_Icon.webp",
+    "icon": "/public/monster/MH4U-Zinogre_Icon.webp",
     "unit": "2",
     "level": "98",
     "artifact": "T6",
@@ -222,7 +222,7 @@
   },
   {
     "id": "31",
-    "icon": "/public/monster/MH4-Stygian_Zinogre_Icon.webp",
+    "icon": "/public/monster/MH4U-Stygian_Zinogre_Icon.webp",
     "unit": "2",
     "level": "94",
     "artifact": "T7",
@@ -235,7 +235,7 @@
   },
   {
     "id": "2A",
-    "icon": "/public/monster/MH4-Deviljho_Icon.webp",
+    "icon": "/public/monster/MH4U-Deviljho_Icon.webp",
     "unit": "2",
     "level": "120",
     "artifact": "T1",
