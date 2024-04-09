@@ -65,5 +65,7 @@ const i18n = createI18n({
   fallbackLocale: 'en', // 设置备用语言
   messages
 });
+// "selectMainMonster": "主なモンスターを選択",
+// "selectSecondaryMonster": "マイナーモンスターを選択",
 
 export default i18n;

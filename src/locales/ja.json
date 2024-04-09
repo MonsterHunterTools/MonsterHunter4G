@@ -6,10 +6,10 @@
   "title": "モンスターハンター4G",
   "guild": {
     "questsEditer": {
-      "selectMainMonster": "主なモンスターを選択",
-      "selectSecondaryMonster": "マイナーモンスターを選択",
+      "selectMainMonster": "test1",
+      "selectSecondaryMonster": "test2",
       "step": {
-        "title1": "设定Monster Wepon FJ"
+        "title1": "Monster W"
       }
     }
   }
