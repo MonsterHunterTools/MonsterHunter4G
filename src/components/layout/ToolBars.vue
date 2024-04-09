@@ -1,8 +1,8 @@
 <template>
-  <v-toolbar image="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" dark prominent>
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  <v-toolbar prominent>
+    <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
-    <v-toolbar-title>../assets/logo.png</v-toolbar-title>
+    <!-- <v-toolbar-title>...</v-toolbar-title> -->
 
     <v-spacer></v-spacer>
 
@@ -16,18 +16,7 @@
 <script setup lang="ts">
 import LanguageChange from '@/components/LanguageChange.vue';
 import ThemeChange from '@/components/ThemeChange.vue';
-import {
-  provide,
-  inject,
-  ref,
-  reactive,
-  shallowReactive,
-  computed,
-  watch,
-  onMounted,
-  onUnmounted,
-  onServerPrefetch
-} from 'vue';
+import { provide, inject, ref, reactive, shallowReactive, computed, watch, onMounted, onUnmounted, onServerPrefetch } from 'vue';
 // import { storeToRefs } from 'pinia';
 // import { useExampleStore } from '@/stores/example-pinia';
 import { useRoute, useRouter } from 'vue-router';

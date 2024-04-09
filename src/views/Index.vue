@@ -13,8 +13,13 @@ import testpage from '@/router/pageList';
       </nav>
     </div>
   </header> -->
-
-  <RouterView />
+  <div id="defaultBox">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#defaultBox {
+  height: calc(100vh - 64px);
+}
+</style>
