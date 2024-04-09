@@ -57,7 +57,9 @@
   margin: 0;
   font-weight: normal;
 }
-
+html {
+  overflow: hidden !important;
+}
 body {
   -webkit-app-region: drag; /* 整个窗口可拖拽 */
   min-height: 100vh;
