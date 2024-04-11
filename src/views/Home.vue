@@ -1,10 +1,10 @@
 <template>
   <div id="home">
+    <h2 style="font-weight: 700; font-size: 36px">R.I.P.</h2>
     <h1 style="font-weight: 600">MonsterHunter 4G 4U</h1>
-    <h2 style="font-weight: 600">R.I.P</h2>
-    <div>
-      {{ endingTimeInit }}
-    </div>
+    <div>2014-10-11 —— 2024-04-09</div>
+    <div>2015-02-13 —— 2024-04-09</div>
+    <div>{{ endingTimeInit }}</div>
     <div>
       {{ TimesInit }}
     </div>
@@ -45,9 +45,9 @@ function updateElapsedTime() {
         const yearsPassed = Math.floor(daysPassed / daysInYear);
         daysPassed = daysPassed % daysInYear;
 
-        return `${yearsPassed} - ${daysPassed} - ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
+        return `${yearsPassed} year ${daysPassed} day ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
       }
-      return `${daysPassed} - ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
+      return `${daysPassed} day ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
     }
     return `${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
   }
