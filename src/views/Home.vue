@@ -45,9 +45,9 @@ function updateElapsedTime() {
         const yearsPassed = Math.floor(daysPassed / daysInYear);
         daysPassed = daysPassed % daysInYear;
 
-        return `${yearsPassed} year ${daysPassed} day ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
+        return `${yearsPassed} years ${daysPassed} days ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
       }
-      return `${daysPassed} day ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
+      return `${daysPassed} days ${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
     }
     return `${hoursPassed.toString().padStart(2, '0')}:${minutesPassed.toString().padStart(2, '0')}:${secondsPassed.toString().padStart(2, '0')}`;
   }
