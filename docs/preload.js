@@ -1,2 +1,2 @@
 // src/electron/preload.ts
-console.log("preload");
+console.log('preload');
